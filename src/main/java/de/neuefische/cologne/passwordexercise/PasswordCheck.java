@@ -1,9 +1,17 @@
 package de.neuefische.cologne.passwordexercise;
 
+import java.util.Scanner;
+
 public class PasswordCheck {
 
     public static void main(String[] args) {
 
+
+        Scanner input_value = new Scanner(System.in);
+        System.out.println("Bitte Password eingeben: ");
+        String password = input_value.nextLine();
+
+        System.out.println(checkPassword(password));
 
 
     }
