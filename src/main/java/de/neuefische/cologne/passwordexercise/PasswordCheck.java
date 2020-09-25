@@ -6,13 +6,19 @@ public class PasswordCheck {
 
     public static void main(String[] args) {
 
-
+        /*
         Scanner input_value = new Scanner(System.in);
         System.out.println("Bitte Password eingeben: ");
         String password = input_value.nextLine();
+        */
 
-        System.out.println(checkPassword(password));
+        String[] passwords = {"Aid82jas","askl4k23","askf","hjh28sdafas","deineMudda","EsIstSoTollHier","asj285jasf9"};
 
+        for (int i = 0; i < passwords.length; i++) {
+
+            System.out.println(passwords[i] + ": " + checkPassword(passwords[i]));
+        }
+//End of main function
 
     }
 
