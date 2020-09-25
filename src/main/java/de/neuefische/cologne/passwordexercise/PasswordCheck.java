@@ -57,31 +57,19 @@ public class PasswordCheck {
 
     public static boolean checkPasswordNumberIncluded (String password) {
 
-        if (password.matches(".*\\d.*")) {
-            return true;
-        } else {
-            return false;
-        }
+        return password.matches(".*\\d.*");
 
     }
 
     public static boolean checkPasswordLowercaseIncluded(String password) {
 
-        if (password.matches(".*\\p{Lower}.*")) {
-            return true;
-        } else {
-            return false;
-        }
+        return password.matches(".*\\p{Lower}.*");
 
     }
 
     public static boolean checkPasswordUppercaseIncluded(String password) {
 
-        if (password.matches(".*\\p{Upper}.*")) {
-            return true;
-        } else {
-            return false;
-        }
+        return password.matches(".*\\p{Upper}.*");
 
     }
 

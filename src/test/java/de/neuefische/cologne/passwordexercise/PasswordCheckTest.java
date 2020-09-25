@@ -17,9 +17,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "aaaaaaaa";
         //WHEN
-        Boolean resultLength = PasswordCheck.checkPasswordLength(inputPassword);
+        boolean resultLength = PasswordCheck.checkPasswordLength(inputPassword);
         //THEN
-        assertEquals(true, resultLength);
+        assertTrue(resultLength);
     }
 
     @Test
@@ -28,9 +28,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "aaaaaaa";
         //WHEN
-        Boolean result= PasswordCheck.checkPasswordLength(inputPassword);
+        boolean result= PasswordCheck.checkPasswordLength(inputPassword);
         //THEN
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     //Check Number Included
@@ -41,9 +41,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "aaaaaaa97895675asdaf";
         //WHEN
-        Boolean result = PasswordCheck.checkPasswordNumberIncluded(inputPassword);
+        boolean result = PasswordCheck.checkPasswordNumberIncluded(inputPassword);
         //THEN
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -52,9 +52,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "aaaaaaaa";
         //WHEN
-        Boolean result = PasswordCheck.checkPasswordNumberIncluded(inputPassword);
+        boolean result = PasswordCheck.checkPasswordNumberIncluded(inputPassword);
         //THEN
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     //Check if Lowercase Included
@@ -65,9 +65,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "aAAAAAAA";
         //WHEN
-        Boolean result = PasswordCheck.checkPasswordLowercaseIncluded(inputPassword);
+        boolean result = PasswordCheck.checkPasswordLowercaseIncluded(inputPassword);
         //THEN
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -76,9 +76,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "AAAAAAAA";
         //WHEN
-        Boolean result = PasswordCheck.checkPasswordLowercaseIncluded(inputPassword);
+        boolean result = PasswordCheck.checkPasswordLowercaseIncluded(inputPassword);
         //THEN
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     //Check if Lowercase Included
@@ -89,9 +89,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "Aaaaaaaa";
         //WHEN
-        Boolean result = PasswordCheck.checkPasswordUppercaseIncluded(inputPassword);
+        boolean result = PasswordCheck.checkPasswordUppercaseIncluded(inputPassword);
         //THEN
-        assertEquals(true, result);
+        assertTrue(result);
     }
 
     @Test
@@ -100,9 +100,9 @@ class PasswordCheckTest {
         //GIVEN
         String inputPassword = "aaaaaaaaa";
         //WHEN
-        Boolean result = PasswordCheck.checkPasswordUppercaseIncluded(inputPassword);
+        boolean result = PasswordCheck.checkPasswordUppercaseIncluded(inputPassword);
         //THEN
-        assertEquals(false, result);
+        assertFalse(result);
     }
 
     //
