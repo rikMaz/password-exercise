@@ -18,7 +18,7 @@ public class PasswordCheck {
 
             System.out.println(passwords[i] + ": " + checkPassword(passwords[i]));
         }
-
+//End of main function
 
     }
 
