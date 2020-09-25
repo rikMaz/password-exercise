@@ -6,19 +6,24 @@ public class PasswordCheck {
 
     public static void main(String[] args) {
 
-        /*
-        Scanner input_value = new Scanner(System.in);
-        System.out.println("Bitte Password eingeben: ");
-        String password = input_value.nextLine();
-        */
+        // create string
+        String[] groupOfPasswords = new String[10];
 
-        String[] passwords = {"Aid82jas","askl4k23","askf","hjh28sdafas","deineMudda","EsIstSoTollHier","asj285jasf9"};
+        // for-loop to input passwords and load into array
+        for (int i = 0 ; i < 10 ; i++) {
+            Scanner input_value = new Scanner(System.in);
+            System.out.println("Bitte Password " + (i + 1) + " eingeben: ");
+            String password = input_value.nextLine();
+            groupOfPasswords[i] = password;
 
-        for (int i = 0; i < passwords.length; i++) {
-
-            System.out.println(passwords[i] + ": " + checkPassword(passwords[i]));
         }
-//End of main function
+
+        // for-loop to check password array against rules
+
+        for (int i = 0; i < groupOfPasswords.length; i++) {
+
+            System.out.println(groupOfPasswords[i] + ": " + checkPassword(groupOfPasswords[i]));
+        }
 
     }
 
